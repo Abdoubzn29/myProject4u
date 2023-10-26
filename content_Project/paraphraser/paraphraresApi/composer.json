@@ -1,0 +1,13 @@
+{
+    "name": "abdoubzn/my-project",
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.7"
+    },
+    "authors": [
+        {
+            "name": "Abdoubzn29",
+            "email": "122210227+Abdoubzn29@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

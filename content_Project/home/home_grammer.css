@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #2b2d42;
+  padding: 15px;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+.item a {
+  margin-top: 20px;
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #4d4f63;
+}
+
+.item a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.itemB a {
+  margin-top: 120%;
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #4d4f63;
+}
+
+.itemB a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  color: #000000;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #BFBEFF;
+  cursor: pointer;
+}
+
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  z-index: 100;
+  background-image: url('/myProject/content_Project/image/background2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(123, 127, 210);
+  border-radius: 100px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.feature-link {
+  color: #4f6bfa;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.1s;
+}
+
+.feature-link:hover {
+  color: #0056b3;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+
+
+textarea {
+  padding: 50px;
+  font-size: 16px;
+  resize: none;
+  box-shadow: 0px 0px 10px 2px rgba(6, 96, 164, 0.601);
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+  background: rgb(239, 240, 255);
+  position: relative;
+  
+}
+
+textarea:focus {
+  box-shadow: 0px 0px 20px 5px rgba(6, 96, 164, 0.601);
+}
+
+grammarly-editor-plugin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  margin-top: -120px;
+  position: relative;
+}
+
+.character-count {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: rgb(255, 249, 249);
+  text-align: center;
+  position: relative;
+  
+}
+
+.copy-button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #BFBEFF;
+  color: #000000;
+  border: none;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.copy-button:hover {
+  box-shadow: 0px 0px 20px 5px rgb(210, 212, 255);
+  background-color: #d7d6fe;
+}
+
+.description {
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.description h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #131045;
+  margin-bottom: 20px;
+  
+}
+
+.description p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-left: 20px;
+  margin-bottom: 65px;
+  
+}
